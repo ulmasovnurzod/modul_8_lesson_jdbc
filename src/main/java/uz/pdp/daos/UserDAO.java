@@ -1,6 +1,7 @@
 package uz.pdp.daos;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import uz.pdp.entities.Users;
@@ -9,6 +10,7 @@ import uz.pdp.utilFile.JsonUtil;
 import java.util.List;
 
 @Component
+@EnableAspectJAutoProxy
 public class UserDAO {
 
     @Autowired
